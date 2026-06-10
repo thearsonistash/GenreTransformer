@@ -33,6 +33,9 @@ To evaluate the performance of our models, we run tests using multiple input rec
 
 Throughout these experiments, we evaluate the quality of the output audio, how well the core melody of the input audio was preserved, and how close the output actually is to the target rock genre. We also baseline our system's performance against traditional pre-ML methods for genre transformation, such as EQ matching.
 
+
+**MORE GRAPHS AND DATA FROM MODEL CHECKPOINTS WILL GO HERE!**
+**ADDITIONAL DETAILS ABOUT THINGS WE STRUGGLED WITH WHILE USING GOOGLE COLAB WIlL GO HERE!**
 ---
 
 ### Audio Examples
