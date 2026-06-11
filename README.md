@@ -38,6 +38,7 @@ The first challenge we faced was that neither of us has taken an ML or AI class 
 Having used Google CoLab and Jupyter notebooks in class, we started by attempting to train two RAVE models there. We knew that a multi-instrument model might be a stretch to train in such a limited amount of time, so we also attempted to train a single-instrument piano-based model. In training in CoLab, we found that we would easily hit GPU limits in the Google Cloud after roughly 3-4 hours. The quality of the free CoLab machine also limited how quickly the model was being trained in CoLab. 
 Eventually, we were able to train the single-instrument piano-based model in Northwestern's Quest machine. This allowed for an additional 8 hours of training on a machine with higher processing capabilities and, especially, a larger GPU. There was a learning curve to using Quest as well, but once this was resolved, Quest was clearly the best way to train the model while also utilizing our known pathway of Jupyter notebooks. 
 In the end, as can be seen below, both models struggled with having an incredible amount of noise in the final product. This is most likely due to latent space that it was picking up in the datasets. RAVE trains on everything in the data that it's given, which can result in not-clean products. 
+
 ---
 ### Graphs
 <img width="1212" height="849" alt="image" src="https://github.com/user-attachments/assets/4413fc58-c2ff-4699-88a0-e00728e7dd96" />
