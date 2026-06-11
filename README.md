@@ -59,7 +59,7 @@ Listen to how the models alter the genre of our test recordings:
 
 **Piano-Only Rock Model**
 
-* **Original Track:** [pop piano track][testPop.mp3](https://github.com/user-attachments/files/28854186/testPop.mp3)
+* **Original Track:** [pop piano track](https://github.com/user-attachments/files/28854186/testPop.mp3)
 
 * **Transformed Track, early model:** [early output](https://github.com/user-attachments/files/28854414/rave_outputEarlyPop.wav)
   
