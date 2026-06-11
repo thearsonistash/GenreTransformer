@@ -30,12 +30,16 @@ To evaluate the performance of our models, we run tests using multiple input rec
 * **Input Complexity:** We test simple inputs with very few instruments/effects and compare the results against more complex, fully produced inputs. We additionally test simple, piano-only inputs with a few effects and compare against more complex, stylized piano-only inputs.
 * **Genre Alignment:** We test inputs that are already of the target genre, inputs from a related genre, and inputs from a completely different genre.
 
-Throughout these experiments, we evaluate the quality of the output audio, how well the core melody of the input audio was preserved, and how close the output actually is to the target rock genre. We also baseline our system's performance against traditional pre-ML methods for genre transformation, such as EQ matching.
+Throughout these experiments, we evaluate the quality of the output audio, how well the core melody of the input audio was preserved, and how close the output actually is to the target rock genre.
 
+### Struggles, Barriers, and our Process
 
-**MORE GRAPHS AND DATA FROM MODEL CHECKPOINTS WILL GO HERE!**
-**ADDITIONAL DETAILS ABOUT THINGS WE STRUGGLED WITH WHILE USING GOOGLE COLAB WIlL GO HERE!**
+The first challenge we faced was that neither of us has taken an ML or AI class at Northwestern. This meant that we were learning as we worked through our project. 
+Having used Google CoLab and Jupyter notebooks in class, we started by attempting to train two RAVE models there. We knew that a multi-instrument model might be a stretch to train in such a limited amount of time, so we also attempted to train a single-instrument piano-based model. In training in CoLab, we found that we would easily hit GPU limits in the Google Cloud after roughly 3-4 hours. The quality of the free CoLab machine also limited how quickly the model was being trained in CoLab. 
+Eventually, we were able to train the single-instrument piano-based model in Northwestern's Quest machine. This allowed for an additional 8 hours of training on a machine with higher processing capabilities and, especially, a larger GPU. There was a learning curve to using Quest as well, but once this was resolved, Quest was clearly the best way to train the model while also utilizing our known pathway of Jupyter notebooks. 
+In the end, as can be seen below, both models struggled with having an incredible amount of noise in the final product. This is most likely due to latent space that it was picking up in the datasets. RAVE trains on everything in the data that it's given, which can result in not-clean products. 
 ---
+### Graphs
 <img width="1212" height="849" alt="image" src="https://github.com/user-attachments/assets/4413fc58-c2ff-4699-88a0-e00728e7dd96" />
 
 <img width="1018" height="724" alt="image" src="https://github.com/user-attachments/assets/3c033e1a-e4bd-4052-ae81-7b0d3be9b776" />
@@ -54,8 +58,16 @@ Listen to how the models alter the genre of our test recordings:
 
 **Piano-Only Rock Model**
 
-* **Original Track:** LINK GOES HERE
-* **Transformed Track:** LINK GOES HERE
+* **Original Track:** [pop piano track][testPop.mp3](https://github.com/user-attachments/files/28854186/testPop.mp3)
+
+* **Transformed Track, early model:** [early output](https://github.com/user-attachments/files/28854414/rave_outputEarlyPop.wav)
+  
+* **Transformed Track, later model:** [late output](https://github.com/user-attachments/files/28854405/rave_outputPop.wav)
+
+* **Original Track:** [Charli piano transposition](https://github.com/user-attachments/files/28854462/CharliePiano.mp3)
+
+* Transformed Track:** [Charli piano rock(?)](https://github.com/user-attachments/files/28854494/rave_outputCharli.wav)
+
 
 ---
 
