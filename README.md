@@ -71,7 +71,7 @@ Listen to how the models alter the genre of our test recordings:
 
 * **Transformed Track, later model:** [365_rave_output.wav](https://github.com/user-attachments/files/28853636/365_rave_output.wav)
 
-* **Original Track: Guitar** [looperman-l-5030382-0393827-upbeat-e-guitar-chords-rock-alt-rock-indie.wav](https://github.com/user-attachments/files/28854872/looperman-l-5030382-0393827-upbeat-e-guitar-chords-rock-alt-rock-indie.wav)
+* **Original Track: Guitar** [rock_guitar.wav](https://github.com/user-attachments/files/28854872/looperman-l-5030382-0393827-upbeat-e-guitar-chords-rock-alt-rock-indie.wav)
 
 * **Transformed Track:** [rave_output_guitar.wav](https://github.com/user-attachments/files/28854997/rave_output_guitar.wav)
 
