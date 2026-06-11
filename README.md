@@ -40,10 +40,13 @@ Eventually, we were able to train the single-instrument piano-based model in Nor
 In the end, as can be seen below, both models struggled with having an incredible amount of noise in the final product. This is most likely due to latent space that it was picking up in the datasets. RAVE trains on everything in the data that it's given, which can result in not-clean products. 
 
 ---
-### Graphs
-<img width="1212" height="849" alt="image" src="https://github.com/user-attachments/assets/4413fc58-c2ff-4699-88a0-e00728e7dd96" />
+### Graphs: General Model
+<img width="1200" height="849" alt="image" src="https://github.com/user-attachments/assets/4413fc58-c2ff-4699-88a0-e00728e7dd96" />
 
-<img width="1018" height="724" alt="image" src="https://github.com/user-attachments/assets/3c033e1a-e4bd-4052-ae81-7b0d3be9b776" />
+<img width="1106" height="796" alt="Screenshot 2026-06-11 145856" src="https://github.com/user-attachments/assets/3cacbac2-b7fc-42a1-9b8a-8679804055ab" />
+
+<img width="1000" height="724" alt="image" src="https://github.com/user-attachments/assets/3c033e1a-e4bd-4052-ae81-7b0d3be9b776" />
+
 
 ### Audio Examples
 
@@ -51,11 +54,17 @@ Listen to how the models alter the genre of our test recordings:
 
 **Multi-Instrument Rock Model**
 
-* **Original Track:** [charli xcx - brat365.wav [𝔟𝔞𝔩𝔢𝔫𝔱𝔦𝔫𝔬 𝔯𝔢𝔪𝔦𝔵].mp3](https://github.com/user-attachments/files/28853651/charli.xcx.-.brat365.wav.mp3)
+* **Original Track: 365** [charli xcx - brat365.wav [𝔟𝔞𝔩𝔢𝔫𝔱𝔦𝔫𝔬 𝔯𝔢𝔪𝔦𝔵].mp3](https://github.com/user-attachments/files/28853651/charli.xcx.-.brat365.wav.mp3)
 
 * **Transformed Track, early model:** [365_rave_output_early.wav](https://github.com/user-attachments/files/28853919/365_rave_output_early.wav)
 
 * **Transformed Track, later model:** [365_rave_output.wav](https://github.com/user-attachments/files/28853636/365_rave_output.wav)
+
+* **Original Track: Guitar** [looperman-l-5030382-0393827-upbeat-e-guitar-chords-rock-alt-rock-indie.wav](https://github.com/user-attachments/files/28854872/looperman-l-5030382-0393827-upbeat-e-guitar-chords-rock-alt-rock-indie.wav)
+
+* **Transformed Track:** [rave_output_guitar.wav](https://github.com/user-attachments/files/28854890/rave_output_guitar.wav)
+
+
 
 **Piano-Only Rock Model**
 
